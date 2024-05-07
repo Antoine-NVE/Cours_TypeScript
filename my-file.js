@@ -1,6 +1,17 @@
+const aNumber = 123;
+const aString = 'fraise';
+const aBoolean = true;
+const MyCharacter = {
+    name: 'Antoine',
+    life: 100,
+    attack: 25,
+    defense: 10,
+};
 function damage(characterToDamage, amount) {
     characterToDamage.life -= amount;
     return characterToDamage.life;
 }
-const result = damage({ life: 100 }, 12);
+const result = damage(MyCharacter, 12);
 console.log(result);
+const arrayOk = [1, 2, 3];
+// const arrayNotOk: MyArrayOfNumbers = [1, 'two', false];
