@@ -14,4 +14,3 @@ function damage(characterToDamage, amount) {
 const result = damage(MyCharacter, 12);
 console.log(result);
 const arrayOk = [1, 2, 3];
-// const arrayNotOk: MyArrayOfNumbers = [1, 'two', false];

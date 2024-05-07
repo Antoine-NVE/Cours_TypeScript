@@ -42,3 +42,14 @@ console.log(result);
 interface MyArrayOfNumbers extends Array<number> {}
 const arrayOk: MyArrayOfNumbers = [1, 2, 3];
 // const arrayNotOk: MyArrayOfNumbers = [1, 'two', false];
+
+interface Shop<ItemType> {
+    name: string;
+    items: Array<ItemType>;
+}
+
+interface ShopOfNumbers extends Shop<number> {}
+
+interface ShopOfStrings extends Shop<string> {}
+
+interface ShopOfBooleans extends Shop<boolean> {}
